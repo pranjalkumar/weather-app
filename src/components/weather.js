@@ -7,8 +7,8 @@ const Weather=(props)=>{
         <div>
 
             <div>{props.error && <p>{props.error}</p>}</div>
-
-            <div>
+            <br />
+            <div className="col-md-10 offset-md-2">
                 <div>{props.desc && <p><b>{props.desc}</b></p>}</div>
                 <div class="row">
                     <div class="col-md-4">
@@ -22,7 +22,7 @@ const Weather=(props)=>{
                     </div>
 
                 </div>
-
+                <br />
                 <div>{props.desc2 && <p><b>{props.desc2}</b></p>}</div>
                 <div class="row">
                     <div class="col-md-4">
@@ -64,8 +64,9 @@ const Weather=(props)=>{
                 </div>
 
             </div>
-
+        <br />
         </div>
+
     )
 }
 

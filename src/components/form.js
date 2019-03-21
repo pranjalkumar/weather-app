@@ -7,11 +7,18 @@ import React from 'react';
 
 const Form=(props)=>{
     return(
-        <form onSubmit={props.loadWeather}>
-            <input type="text" name="city" placeholder="Enter your city here"/>
-            <input type="text" name="country" placeholder="Enter your country here"/>
-            <button>Get Weather information</button>
-        </form>
+        <form onSubmit={props.loadWeather} className="col-md-8 offset-2">
+        <div className="form-row">
+            <div className="col">
+                <input type="text" name="city" className="form-control" placeholder="Enter your city here"/>
+            </div>
+            <div className="col">
+                <input type="text" name="country" className="form-control" placeholder="Enter your country here"/>
+            </div>
+
+            <button className="btn btn-success">Get weather information</button>
+    </div>
+    </form>
     )
 }
 
