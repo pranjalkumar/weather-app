@@ -3,7 +3,8 @@
  */
 import React, {Component} from 'react';
 import {Bar} from 'react-chartjs-2';
-
+//importing required files
+//chart functional component
 const Chart=(props)=>{
     return(
         <div className="chart">
@@ -34,4 +35,5 @@ const Chart=(props)=>{
     )
 }
 
+//exporting the chart module
 export default Chart;

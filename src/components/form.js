@@ -2,6 +2,9 @@
  * Created by LENOVO on 20-03-2019.
  */
 import React from 'react';
+//importing all the required files
+//defining form functional component
+
 const Form=(props)=>{
     return(
         <form onSubmit={props.loadWeather}>
@@ -12,4 +15,5 @@ const Form=(props)=>{
     )
 }
 
+//exporting the form module
 export default Form;

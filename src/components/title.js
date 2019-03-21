@@ -2,6 +2,9 @@
  * Created by LENOVO on 20-03-2019.
  */
 import React from 'react';
+//importing all the required files
+//defining title functional component
+
 const Title=(props)=>{
     return (
         <div>
@@ -11,4 +14,5 @@ const Title=(props)=>{
     )
 }
 
+//exporting the title module
 export default Title;
