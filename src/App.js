@@ -40,12 +40,12 @@ class App extends React.Component {
     //prevent refreshing of page
     e.preventDefault();
 
-      // const api_call = await fetch(`http://api.apixu.com/v1/current.json?key=${key}&q=${city}`);
+      // const api_call = await fetch(`https://api.apixu.com/v1/current.json?key=${key}&q=${city}`);
       // const response = await api_call.json();
       // console.log(response);
 
       //API call to get the current and 3 days forecast weather report
-      const forecast_api_call= await fetch(`http://api.apixu.com/v1/forecast.json?key=${key}&q=${city}&days=4`);
+      const forecast_api_call= await fetch(`https://api.apixu.com/v1/forecast.json?key=${key}&q=${city}&days=4`);
       const forecast_response=await forecast_api_call.json();
 
       //storing the forecast record in an array
@@ -81,7 +81,7 @@ class App extends React.Component {
           date_record.push(back_date);
 
           //API call to access historical data. The data is fetched for each day in the while loop
-          let new_api=await fetch(`http://api.apixu.com/v1/history.json?key=${key}&q=${city}&dt=${back_date}`);
+          let new_api=await fetch(`https://api.apixu.com/v1/history.json?key=${key}&q=${city}&dt=${back_date}`);
           let result=await new_api.json();
 
 
