@@ -67,7 +67,7 @@ class App extends React.Component {
       let temp=[];
       let humidity=[];
       let date_record=[];
-      while(days){
+      while(days>1){
 
           //iterating through past 7 days
           let date = new Date();
@@ -85,7 +85,7 @@ class App extends React.Component {
           let result=await new_api.json();
 
 
-          // console.log(result);
+          console.log(result);
           //storing the temperature and humidity record
           temp.push(result.forecast.forecastday[0].day.avgtemp_c);
           humidity.push(result.forecast.forecastday[0].day.avghumidity);

@@ -3,11 +3,11 @@
  */
 import React, {Component} from 'react';
 import {Bar} from 'react-chartjs-2';
-//importing required files
-//chart functional component
+
 const Chart=(props)=>{
     return(
-        <div className="chart">
+        <div className="chart row">
+            <div className="col-md-5 offset-1">
             <Bar
                 data={props.chartDataTemperature}
                 options={{title:{
@@ -19,7 +19,8 @@ const Chart=(props)=>{
                         display:true,
                     }}}
             />
-
+            </div>
+            <div className="col-md-5">
             <Bar
                 data={props.chartDataHumidity}
                 options={{title:{
@@ -31,9 +32,9 @@ const Chart=(props)=>{
                         display:true,
                     }}}
             />
+            </div>
         </div>
     )
 }
 
-//exporting the chart module
 export default Chart;
